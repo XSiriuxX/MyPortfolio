@@ -25,7 +25,7 @@ const WorkCards = () => {
     },
     {
       id: 3,
-      name: "My Protfolio",
+      name: "My PortFolio",
       img: "imagen3",
       description: "descripcion",
       link: "link",
