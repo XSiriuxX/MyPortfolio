@@ -3,6 +3,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import "./hero.css";
+import Resume from "../../Extras/giovanni_cespedes_cv.pdf";
 
 const Hero = () => {
   return (
@@ -40,7 +41,7 @@ const Hero = () => {
             >
               <span> Hire Me</span>
             </a>
-            <a href="#" download>
+            <a href={Resume} download>
               <div>
                 Resume <FiDownload />
               </div>

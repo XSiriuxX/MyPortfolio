@@ -3,6 +3,8 @@ import { RxExternalLink } from "react-icons/rx";
 import { AiOutlineGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import imagen1 from "../../Extras/videogamesimage.png";
+import imagen2 from "../../Extras/rickandmorty.png";
+import imagen3 from "../../Extras/portfolio.png";
 
 const WorkCards = () => {
   const works = [
@@ -18,18 +20,20 @@ const WorkCards = () => {
     {
       id: 2,
       name: "Rick and Morty API",
-      img: "imagen2",
-      description: "descripcion",
+      img: imagen2,
+      description:
+        "RickAndMorty API Project: Crafted during my Henry bootcamp journey, this inaugural project epitomizes my full-stack skills. Seamlessly integrating frontend, backend, and database components, I harnessed the RickAndMorty API to create an immersive experience. Join me in celebrating this foundational achievement that marked the beginning of my coding odyssey.",
       link: "link",
-      git: "git",
+      git: "https://github.com/XSiriuxX/RickandMorty",
     },
     {
       id: 3,
       name: "My PortFolio",
-      img: "imagen3",
-      description: "descripcion",
-      link: "link",
-      git: "git",
+      img: imagen3,
+      description:
+        "I'm excited to showcase my latest projects and creations here. This dynamic platform serves as a hub for my upcoming endeavors, where I'll be sharing my innovative projects, designs, and ideas. Join me on this journey as I bring my visions to life, one project at a time.",
+      link: "https://portfoliogiovanni-snowy.vercel.app/",
+      git: "https://github.com/XSiriuxX/MyPortfolio",
     },
   ];
 
