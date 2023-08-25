@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import imagen1 from "../../Extras/videogamesimage.png";
 import imagen2 from "../../Extras/rickandmorty.png";
 import imagen3 from "../../Extras/portfolio.png";
+import imagen4 from "../../Extras/pokedex.png";
 
 const WorkCards = () => {
   const works = [
@@ -34,6 +35,15 @@ const WorkCards = () => {
         "I'm excited to showcase my latest projects and creations here. This dynamic platform serves as a hub for my upcoming endeavors, where I'll be sharing my innovative projects, designs, and ideas. Join me on this journey as I bring my visions to life, one project at a time.",
       link: "https://portfoliogiovanni-snowy.vercel.app/",
       git: "https://github.com/XSiriuxX/MyPortfolio",
+    },
+    {
+      id: 4,
+      name: "TypeScript PokeDex app",
+      img: imagen4,
+      description:
+        "Is a project where I honed my skills in React and TypeScript. This app allows users to browse and search for Pokémon, displaying their details and information. Through this project, I gained hands-on experience in leveraging TypeScript's strong typing and React's component-based architecture to create a dynamic and responsive application for Pokémon enthusiasts.",
+      link: "https://pokedex-react-ts-eight.vercel.app/",
+      git: "https://github.com/XSiriuxX/Pokedex-React-TS",
     },
   ];
 
