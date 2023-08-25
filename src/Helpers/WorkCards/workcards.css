@@ -17,13 +17,14 @@
 }
 
 .title {
-  font-size: 2rem;
+  margin-top: 5px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .flip-card {
   --card-width: 20.5rem;
-  --card-height: 15rem;
+  --card-height: 11rem;
 }
 
 .card-image {
