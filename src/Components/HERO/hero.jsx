@@ -75,7 +75,7 @@ const Hero = () => {
           <div className="image">
             <img
               data-aos="fade-up"
-              src="https://media.licdn.com/dms/image/C4E03AQF9g5FLLLviuw/profile-displayphoto-shrink_800_800/0/1667863811619?e=1698278400&v=beta&t=brEhR51jYKoERvKffBc2eCeZMt3E7BBmKxJxdu41HsY"
+              src="https://media.licdn.com/dms/image/D4E03AQHW0nCVPUrptw/profile-displayphoto-shrink_800_800/0/1693190040220?e=1701302400&v=beta&t=8oJKiVDSXIknAzACrHPbr4ezQBBGxw8ik_dkT6ixZWI"
               alt="me"
             />
           </div>

@@ -6,6 +6,7 @@ import imagen1 from "../../Extras/videogamesimage.png";
 import imagen2 from "../../Extras/rickandmorty.png";
 import imagen3 from "../../Extras/portfolio.png";
 import imagen4 from "../../Extras/pokedex.png";
+import imagen5 from "../../Extras/glamourglow.png"
 
 const WorkCards = () => {
   const works = [
@@ -44,6 +45,15 @@ const WorkCards = () => {
         "Is a project where I honed my skills in React and TypeScript. This app allows users to browse and search for Pokémon, displaying their details and information. Through this project, I gained hands-on experience in leveraging TypeScript's strong typing and React's component-based architecture to create a dynamic and responsive application for Pokémon enthusiasts.",
       link: "https://pokedex-react-ts-eight.vercel.app/",
       git: "https://github.com/XSiriuxX/Pokedex-React-TS",
+    },
+    {
+      id: 5,
+      name: "Glamour Glow - Stylish Web Application",
+      img: imagen5,
+      description:
+        "This project has been a true collaboration where we've merged our skills and creativity to create an exceptional online experience. From the visually stunning design to the seamless functionality, every detail has been carefully crafted to deliver the best in technology and style.",
+      link: "https://glamour-glow.vercel.app/",
+      git: "https://github.com/EderFornero/Glamour-Glow",
     },
   ];
 
