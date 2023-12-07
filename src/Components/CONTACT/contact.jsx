@@ -6,18 +6,19 @@ const Contact = () => {
   return (
     <div id="contact" className="contact">
       <div className="contact-container">
-        {/* heading */}
         <div className="contact-heading">
           <h3 className="contact-title">Contact</h3>
           <span className="contact-divider" />
         </div>
+        <p data-aos="fade-up" className="works-description">
+          You can text me.
+        </p>
 
-        {/*content*/}
         <div className="contact-content">
           <div className="contact-left">
             <div className="contact-text">
               <h1>You Need</h1>
-              <h3> Beautiful design for your website leave a request</h3>
+              <h3>Beautiful design for your website leave a request</h3>
             </div>
           </div>
           <div className="contact-center">
@@ -27,15 +28,9 @@ const Contact = () => {
             <form className="contact-form">
               <input
                 className="input"
-                type="email"
-                name="email"
-                placeholder="e.g. example@email.com"
-              />
-              <input
-                className="input"
                 type="text"
                 name="name"
-                placeholder="e.g. Giovanni Cespedes"
+                placeholder="Your name"
               />
               <textarea
                 className="textarea"

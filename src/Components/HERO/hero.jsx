@@ -1,9 +1,10 @@
 import { TypeAnimation } from "react-type-animation";
 import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import "./hero.css";
-import Resume from "../../Extras/giovanni_cespedes_cv.pdf";
+import Resume from "../../Extras/CV-GIOVANNICESPEDES-ENG.pdf";
+import Foto from "../../Extras/Foto1.jpg";
 
 const Hero = () => {
   return (
@@ -20,7 +21,8 @@ const Hero = () => {
               2000,
               "Full Stack",
               2000,
-              "",
+              "Frontend Developer",
+              2000,
             ]}
             speed={30}
             wrapper="h1"
@@ -29,8 +31,11 @@ const Hero = () => {
           />
 
           <p data-aos="fade-up" className="description">
-            I&apos;m a Junior FullStack Developer, graduated from &quot;Soy
-            Henry&quot;
+            Aspiring Systems Engineer and Full Stack Web Developer with a solid
+            problem-solving foundation and extensive systems knowledge.
+            Completed a rigorous Full Stack Web Development bootcamp at Henry.
+            Let&apos;s connect and explore the boundless opportunities where
+            engineering meets web development! 🚀
           </p>
 
           <div data-aos="fade-up" className="buttons">
@@ -68,16 +73,22 @@ const Hero = () => {
                   <FaLinkedinIn />
                 </a>
               </li>
+              <li>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://wa.me/955804941"
+                >
+                  <FaWhatsapp />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
+
         <div className="right">
           <div className="image">
-            <img
-              data-aos="fade-up"
-              src="https://media.licdn.com/dms/image/D4E03AQHW0nCVPUrptw/profile-displayphoto-shrink_800_800/0/1693190040220?e=1701302400&v=beta&t=8oJKiVDSXIknAzACrHPbr4ezQBBGxw8ik_dkT6ixZWI"
-              alt="me"
-            />
+            <img data-aos="fade-up" src={Foto} alt="me" />
           </div>
         </div>
       </div>

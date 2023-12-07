@@ -1,5 +1,6 @@
 .works {
-  padding-bottom: 4rem;
+  padding-block: 3rem;
+  background: linear-gradient(to right, #166735, #1a3243);
 }
 
 .works-container {

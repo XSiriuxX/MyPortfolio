@@ -6,7 +6,7 @@ import imagen1 from "../../Extras/videogamesimage.png";
 import imagen2 from "../../Extras/rickandmorty.png";
 import imagen3 from "../../Extras/portfolio.png";
 import imagen4 from "../../Extras/pokedex.png";
-import imagen5 from "../../Extras/glamourglow.png"
+import imagen5 from "../../Extras/glamourglow.png";
 
 const WorkCards = () => {
   const works = [
@@ -48,7 +48,7 @@ const WorkCards = () => {
     },
     {
       id: 5,
-      name: "Glamour Glow - Stylish Web Application",
+      name: "Glamour Glow Web",
       img: imagen5,
       description:
         "This project has been a true collaboration where we've merged our skills and creativity to create an exceptional online experience. From the visually stunning design to the seamless functionality, every detail has been carefully crafted to deliver the best in technology and style.",
@@ -59,7 +59,7 @@ const WorkCards = () => {
 
   return (
     <div className="cards-container">
-      {works.map((data) => {
+      {works.reverse().map((data) => {
         return (
           <div className="flip-card" data-aos="zoom-in" key={data.id}>
             <div className="flip-card-inner">
@@ -67,6 +67,7 @@ const WorkCards = () => {
                 <p className="title">{data.name}</p>
                 <img className="card-image" src={data.img} />
               </div>
+
               <div className="flip-card-back">
                 <p className="description">{data.description}</p>
                 <div className="card-links">

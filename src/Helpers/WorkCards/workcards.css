@@ -1,7 +1,7 @@
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 1rem;
   gap: 1rem;
   width: 100%;
   justify-content: center;
@@ -12,28 +12,19 @@
   max-width: 22rem;
   min-width: 21rem;
   height: 15rem;
-  perspective: 100rem;
   flex: 1;
 }
 
 .title {
-  margin-top: 5px;
+  margin-bottom: 10px;
   font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.flip-card {
-  --card-width: 20.5rem;
-  --card-height: 11rem;
 }
 
 .card-image {
-  max-width: var(--card-width);
-  max-height: var(--card-height);
+  max-width: 90%;
+  max-height: 90%;
   margin: 0 auto;
-  border-radius: 1.5rem;
-  width: 100%;
-  height: 100%;
+  border-radius: 1rem;
   object-fit: contain;
 }
 
@@ -47,7 +38,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 
@@ -65,7 +56,7 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border: 1px solid rgb(143, 114, 0);
+  border: 1px solid white;
   border-radius: 1rem;
 }
 
