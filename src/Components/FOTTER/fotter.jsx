@@ -1,6 +1,6 @@
 import "./fotter.css";
 import { FaLinkedinIn } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
+
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillGithub } from "react-icons/ai";
 
@@ -21,18 +21,11 @@ const Fotter = () => {
           rel="noreferrer"
           target="_blank"
           data-aos="fade-in"
-          href="https://www.linkedin.com/in/giovannicespedes/"
+          href="https://wa.me/955804941"
         >
           <IoLogoWhatsapp />
         </a>
-        <a
-          rel="noreferrer"
-          target="_blank"
-          data-aos="fade-in"
-          href="https://www.linkedin.com/in/giovannicespedes/"
-        >
-          <RiInstagramFill />
-        </a>
+
         <a
           rel="noreferrer"
           target="_blank"
