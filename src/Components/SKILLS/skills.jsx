@@ -12,13 +12,14 @@ import {
   SiPostgresql,
   SiTailwindcss,
   SiTypescript,
+  SiNextdotjs,
 } from "react-icons/si";
 
 const skillslist1 = [
   { name: "JavaScript", img: SiJavascript, value: 90 },
   { name: "ReactJs", img: FaReact, value: 95 },
   { name: "Angular", img: IoLogoHtml5, value: 80 },
-  { name: "NextJs", img: SiMongodb, value: 85 },
+  { name: "NextJs", img: SiNextdotjs, value: 85 },
   { name: "HTML", img: IoLogoHtml5, value: 95 },
   { name: "CSS", img: IoLogoCss3, value: 90 },
 ];
