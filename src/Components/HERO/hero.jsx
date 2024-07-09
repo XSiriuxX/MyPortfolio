@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import "./hero.css";
 import Resume from "../../Extras/CV-GIOVANNICESPEDES-ENG.pdf";
-import Foto from "../../Extras/Foto1.jpg";
+import Foto from "../../Extras/foto1.jpg";
 
 const Hero = () => {
   return (
