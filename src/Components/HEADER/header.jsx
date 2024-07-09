@@ -1,5 +1,6 @@
 import "./header.css";
 import ParticleBackground from "../PARTICLE/particle";
+import "boxicons";
 
 const Header = () => {
   return (

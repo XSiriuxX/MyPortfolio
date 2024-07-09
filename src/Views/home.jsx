@@ -5,6 +5,8 @@ import Fotter from "../Components/FOTTER/fotter";
 import Works from "../Components/WORKS/works";
 import Contact from "../Components/CONTACT/contact";
 import Header from "../Components/HEADER/header";
+import "./home.css";
+import "boxicons";
 
 const Home = () => {
   function scrollToTop() {
