@@ -7,6 +7,7 @@ import Contact from "../Components/CONTACT/contact";
 import Header from "../Components/HEADER/header";
 import "./home.css";
 import "boxicons";
+import { Analytics } from "@vercel/analytics/react";
 
 const Home = () => {
   function scrollToTop() {
@@ -37,6 +38,7 @@ const Home = () => {
       <button className="scroll-top" onClick={scrollToTop}>
         <box-icon name="up-arrow" type="solid"></box-icon>
       </button>
+      <Analytics />
     </>
   );
 };
