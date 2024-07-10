@@ -1,31 +1,42 @@
 .navbar {
   position: fixed;
+  display: flex;
+  justify-content: center;
   top: 0;
-  left: 0;
   width: 100%;
-  background-color: rgb(16, 16, 16);
-  color: white;
   padding: 10px 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 50;
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4rem;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
+  height: 64px;
+  width: 64px;
+  color: white;
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-links-dropdown {
+  height: 64px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 66px;
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 48px;
 }
 
 .nav-links-dropdown li {
@@ -40,6 +51,10 @@
   color: white;
   text-decoration: none;
   transition: background-color 0.3s;
+}
+
+.nav-links-dropdown a:hover {
+  color: color-mix(in srgb-linear, #166735 40%, #1a3243 60%) !important;
 }
 
 .hamburger {

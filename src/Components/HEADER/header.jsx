@@ -1,16 +1,15 @@
 import "./header.css";
 import ParticleBackground from "../PARTICLE/particle";
-import "boxicons";
 
 const Header = () => {
   return (
     <header>
       <ParticleBackground id="particles" />
       <div className="info-text">
-        <h1>AsmrProg</h1>
-        <h3>Web Coding Youtube Channel With Big Community</h3>
+        <h1>My Portfolio</h1>
+        <h3>Systems Enginner & Full Stack Developer </h3>
         <a href="#home" className="scroll">
-          <box-icon type="solid" name="down-arrow"></box-icon>
+          <box-icon type="solid" name="down-arrow" color="white"></box-icon>
         </a>
       </div>
     </header>

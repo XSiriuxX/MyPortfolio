@@ -1,4 +1,7 @@
 .skills {
+  position: relative;
+  z-index: 2;
+  background-color: #171717;
   padding-block: 3rem;
 }
 

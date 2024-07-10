@@ -1,12 +1,30 @@
 import { TypeAnimation } from "react-type-animation";
 import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-import { FiDownload } from "react-icons/fi";
+import {
+  FaLinkedinIn,
+  FaWhatsapp,
+  FaCopy,
+  FaPlus,
+  FaDownload,
+} from "react-icons/fa";
 import "./hero.css";
 import Resume from "../../Extras/CV-GIOVANNICESPEDES-ENG.pdf";
-import Foto from "../../Extras/foto1.jpg";
+import Foto from "../../Extras/foto1.png";
 
 const Hero = () => {
+  const email = "giovanni.cespedes@gmail.com";
+
+  const copyToClipboard = () => {
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        alert("Email copiado");
+      })
+      .catch((err) => {
+        console.error("Error al copiar el texto: ", err);
+      });
+  };
+
   return (
     <div id="home" className="hero">
       <div className="hero-container">
@@ -31,11 +49,12 @@ const Hero = () => {
           />
 
           <p data-aos="fade-up" className="description">
-            Aspiring Systems Engineer and Full Stack Web Developer with a solid
-            problem-solving foundation and extensive systems knowledge.
-            Completed a rigorous Full Stack Web Development bootcamp at Henry.
-            Let&apos;s connect and explore the boundless opportunities where
-            engineering meets web development! 🚀
+            <span>
+              Systems Engineer and Full Stack Web Developer with a solid
+              problem-solving foundation and extensive systems knowledge.
+              Let&apos;s connect and explore the boundless opportunities where
+              engineering meets web development! 🚀
+            </span>
           </p>
 
           <div data-aos="fade-up" className="buttons">
@@ -44,16 +63,24 @@ const Hero = () => {
               target="_blank"
               href="https://www.linkedin.com/in/giovannicespedes/"
             >
-              <span> Hire Me</span>
+              <span>Hire Me</span> <FaPlus />
             </a>
             <a href={Resume} download>
               <div>
-                Resume <FiDownload />
+                <span>Resume</span> <FaDownload />
               </div>
+            </a>
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                copyToClipboard();
+              }}
+            >
+              <span>Copy Email</span> <FaCopy />
             </a>
           </div>
 
-          <div className="icons flex mt-5">
+          <div className="icons ">
             <ul data-aos="fade-up" data-aos-duration="1500">
               <li>
                 <a

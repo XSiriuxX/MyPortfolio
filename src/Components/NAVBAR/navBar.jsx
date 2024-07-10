@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./navBar.css";
 import { HiMenu } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
+import "boxicons";
 
 const navItems = [
   { id: 0, name: "home" },
@@ -22,7 +23,9 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <nav className="container">
-        <div className="logo">PortFolio</div>
+        <div className="logo">
+          <box-icon name="code-alt" color="white" size="md"></box-icon>
+        </div>
 
         <button onClick={toggleNav} className="hamburger">
           {isMenuOpen ? <RxCross2 size={25} /> : <HiMenu size={25} />}

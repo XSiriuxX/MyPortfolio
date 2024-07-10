@@ -36,7 +36,7 @@ const Home = () => {
       <Contact />
       <Fotter />
       <button className="scroll-top" onClick={scrollToTop}>
-        <box-icon name="up-arrow" type="solid"></box-icon>
+        <box-icon name="up-arrow" type="solid" color="white"></box-icon>
       </button>
       <Analytics />
     </>

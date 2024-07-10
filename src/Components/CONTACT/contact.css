@@ -1,5 +1,8 @@
 .contact {
   padding-block: 3rem;
+  position: relative;
+  z-index: 2;
+  background-color: #171717;
 }
 
 .contact-container {
