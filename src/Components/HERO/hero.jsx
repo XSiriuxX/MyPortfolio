@@ -28,7 +28,7 @@ const Hero = () => {
   return (
     <div id="home" className="hero">
       <div className="hero-container">
-        <div className="left" data-aos="fade-up">
+        <section className="left" data-aos="fade-up">
           <h2>Hello, I am Giovanni Cespedes</h2>
 
           <TypeAnimation
@@ -56,29 +56,6 @@ const Hero = () => {
               engineering meets web development! 🚀
             </span>
           </p>
-
-          <div data-aos="fade-up" className="buttons">
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="https://www.linkedin.com/in/giovannicespedes/"
-            >
-              <span>Hire Me</span> <FaPlus />
-            </a>
-            <a href={Resume} download>
-              <div>
-                <span>Resume</span> <FaDownload />
-              </div>
-            </a>
-            <a
-              onClick={(e) => {
-                e.preventDefault();
-                copyToClipboard();
-              }}
-            >
-              <span>Copy Email</span> <FaCopy />
-            </a>
-          </div>
 
           <div className="icons ">
             <ul data-aos="fade-up" data-aos-duration="1500">
@@ -111,13 +88,34 @@ const Hero = () => {
               </li>
             </ul>
           </div>
-        </div>
 
-        <div className="right">
+          <div data-aos="fade-up" className="buttons">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/giovannicespedes/"
+            >
+              <span>Hire Me</span> <FaPlus />
+            </a>
+            <a href={Resume} download>
+              <span>Resume</span> <FaDownload />
+            </a>
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                copyToClipboard();
+              }}
+            >
+              <span>Copy Email</span> <FaCopy />
+            </a>
+          </div>
+        </section>
+
+        <section className="right">
           <div className="image">
             <img data-aos="fade-up" src={Foto} alt="me" />
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );

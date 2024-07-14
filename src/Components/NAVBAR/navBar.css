@@ -19,9 +19,9 @@
   height: 64px;
   width: 64px;
   color: white;
-  background: #18181b;
+  background: #18181be3;
   border: 1px solid #27272a;
-  border-radius: 48px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +34,7 @@
   justify-content: space-between;
   width: 100%;
   padding: 0 66px;
-  background-color: #18181b;
+  background-color: #18181be3;
   border: 1px solid #27272a;
   border-radius: 48px;
 }
@@ -45,16 +45,15 @@
 }
 
 .nav-links-dropdown a {
-  padding-right: 4rem;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: 0.5s;
 }
 
 .nav-links-dropdown a:hover {
-  color: color-mix(in srgb-linear, #166735 40%, #1a3243 60%) !important;
+  color: #1b9148;
 }
 
 .hamburger {

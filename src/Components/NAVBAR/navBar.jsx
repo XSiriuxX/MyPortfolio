@@ -23,9 +23,9 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <nav className="container">
-        <div className="logo">
+        <a href="#header" className="logo">
           <box-icon name="code-alt" color="white" size="md"></box-icon>
-        </div>
+        </a>
 
         <button onClick={toggleNav} className="hamburger">
           {isMenuOpen ? <RxCross2 size={25} /> : <HiMenu size={25} />}

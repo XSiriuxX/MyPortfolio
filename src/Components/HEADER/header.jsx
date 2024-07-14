@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <ParticleBackground id="particles" />
-      <div className="info-text">
+      <div className="info-text" id="header">
         <h1>My Portfolio</h1>
         <h3>Systems Enginner & Full Stack Developer </h3>
         <a href="#home" className="scroll">
