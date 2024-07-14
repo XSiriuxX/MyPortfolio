@@ -7,12 +7,11 @@ const WorkCard = ({ name, description, link, git, img }) => {
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <p className="title">{name}</p>
-          <img className="card-image" src={img} />
+          <h2>{name}</h2>
+          <img src={img} />
         </div>
 
         <div className="flip-card-back">
-          <p className="description">{description}</p>
           <div className="card-links">
             <a href={link}>
               <RxExternalLink />
@@ -23,6 +22,7 @@ const WorkCard = ({ name, description, link, git, img }) => {
               <p className="link-text">Code</p>
             </a>
           </div>
+          <p>{description}</p>
         </div>
       </div>
     </div>

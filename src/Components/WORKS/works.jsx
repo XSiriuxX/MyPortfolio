@@ -3,26 +3,26 @@ import WorkCard from "../../Helpers/WorkCards/workcards";
 import imagen1 from "../../Extras/videogamesimage.png";
 import imagen2 from "../../Extras/rickandmorty.png";
 import imagen3 from "../../Extras/portfolio.png";
-import imagen4 from "../../Extras/pokedex.png";
-import imagen5 from "../../Extras/glamourglow.png";
+import imagen4 from "../../Extras/glamourglow.png";
+import imagen5 from "../../Extras/petsdesign.png";
 
 const Works = () => {
   const Projects = [
     {
       id: 1,
-      name: "VideoGames API ",
+      name: "VideoGames SPA ",
       img: imagen1,
       description:
-        "I created a Single Page Application (SPA) as an individual project for Henry, in which I implemented various development technologies such as: React, Redux, Express, Node.js, Sequelize, etc. This project was highly appreciated by Henry, and I am proud to have developed my acquired skills so effectively.",
+        "I created a Single Page Application in which I implemented various development technologies such as: React, Redux, Express, Node.js, Sequelize, etc.",
       link: "https://pi-final.vercel.app/",
       git: "https://github.com/XSiriuxX/PI_FINAL",
     },
     {
       id: 2,
-      name: "Rick and Morty API",
+      name: "Rick and Morty SPA",
       img: imagen2,
       description:
-        "RickAndMorty API Project: Crafted during my Henry bootcamp journey, this inaugural project epitomizes my full-stack skills. Seamlessly integrating frontend, backend, and database components, I harnessed the RickAndMorty API to create an immersive experience. Join me in celebrating this foundational achievement that marked the beginning of my coding odyssey.",
+        "Crafted during my Henry bootcamp journey, this inaugural project epitomizes my full-stack skills. Seamlessly integrating frontend, backend, and database components.",
       link: "link",
       git: "https://github.com/XSiriuxX/RickandMorty",
     },
@@ -31,27 +31,44 @@ const Works = () => {
       name: "My PortFolio",
       img: imagen3,
       description:
-        "I'm excited to showcase my latest projects and creations here. This dynamic platform serves as a hub for my upcoming endeavors, where I'll be sharing my innovative projects, designs, and ideas. Join me on this journey as I bring my visions to life, one project at a time.",
+        "This dynamic platform serves as a hub for my upcoming endeavors, where I'll be sharing my innovative projects, designs, and ideas.",
       link: "https://portfoliogiovanni-snowy.vercel.app/",
       git: "https://github.com/XSiriuxX/MyPortfolio",
     },
     {
       id: 4,
-      name: "TypeScript PokeDex app",
+      name: "Glamour Glow Web",
       img: imagen4,
       description:
-        "Is a project where I honed my skills in React and TypeScript. This app allows users to browse and search for Pokémon, displaying their details and information. Through this project, I gained hands-on experience in leveraging TypeScript's strong typing and React's component-based architecture to create a dynamic and responsive application for Pokémon enthusiasts.",
-      link: "https://pokedex-react-ts-eight.vercel.app/",
-      git: "https://github.com/XSiriuxX/Pokedex-React-TS",
+        "This project has been a true collaboration where we've merged our skills and creativity to create an exceptional online experience. ",
+      link: "https://glamour-glow.vercel.app/",
+      git: "https://github.com/EderFornero/Glamour-Glow",
     },
     {
       id: 5,
-      name: "Glamour Glow Web",
+      name: "Pets App Design",
       img: imagen5,
       description:
-        "This project has been a true collaboration where we've merged our skills and creativity to create an exceptional online experience. From the visually stunning design to the seamless functionality, every detail has been carefully crafted to deliver the best in technology and style.",
-      link: "https://glamour-glow.vercel.app/",
-      git: "https://github.com/EderFornero/Glamour-Glow",
+        "Pets is a UX and UI design project dedicated to facilitating the adoption of pets.I applied my des ign skills to create wireframes and prototypes.",
+      link: "https://www.figma.com/design/S73jIGJYuikvxmxj2pnRBn/PETS?node-id=0-1&t=NiMQzjSkO8VAon2m-1",
+      git: "#",
+    },
+  ];
+
+  const Jobs = [
+    {
+      id: 1,
+      name: "Programing Teacher Assistant | Academy Henry - Remote ",
+      description:
+        "Served as a Teacher Assistant at Henry, supporting a dynamic group of future full-stack developers during an enriching 2-month period. Facilitated a comfortable and friendly environment to foster teamwork development among students. Aptitudes: Teamwork, facilitation, Guidance and mentorship, Creating a positive learning environment, Empowering students in their educational journey.",
+      date: "Jul. 2023 – Sep. 2023",
+    },
+    {
+      id: 1,
+      name: "Systems Analyst (ERP)| Restaurant La Frutita E.I.R.L – Ica, Perú",
+      description:
+        "As a Systems Analyst at La Frutita in Ica, Peru, I have been leading the management of the ERP, overseeing logistics, storage, and procedures since January 2024. I configure and customize the ERP, ensuring its alignment with the restaurant's operational objectives. I provide training and technical support to employees to optimize system usage.  ",
+      date: "Jan. 2024 – Present",
     },
   ];
 
@@ -62,6 +79,21 @@ const Works = () => {
           <h3 className="works-title">Work & Projects</h3>
           <span className="works-divider" />
         </div>
+
+        <section className="first">
+          {Jobs.reverse().map((data) => {
+            return (
+              <div key={data.id} className="job">
+                <h3>
+                  <span>{data.name}</span>
+                  <span>{data.date}</span>
+                </h3>
+
+                <p>{data.description}</p>
+              </div>
+            );
+          })}
+        </section>
 
         <section className="works-content">
           {Projects.reverse().map((data) => {

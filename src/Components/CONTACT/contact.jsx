@@ -41,20 +41,19 @@ const Contact = () => {
           <h3 className="contact-title">Contact</h3>
           <span className="contact-divider" />
         </div>
-        <p data-aos="fade-up" className="works-description">
-          You can text me.
-        </p>
 
-        <div className="contact-content">
-          <div className="contact-left">
-            <div className="contact-text">
-              <h1>You Need</h1>
-              <h3>Beautiful design for your website leave a request</h3>
-            </div>
+        <section className="left">
+          <div className="image">
+            <img data-aos="fade-up" alt="me" />
           </div>
-          <div className="contact-center">
-            <BsArrowRight />
+        </section>
+
+        <section className="contact-content">
+          <div className="contact-text">
+            <h1>You Need</h1>
+            <h3>Beautiful design for your website leave a request</h3>
           </div>
+
           <div className="contact-right">
             <form
               className="contact-form"
@@ -90,7 +89,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );
