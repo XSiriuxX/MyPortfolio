@@ -35,7 +35,7 @@ const Fotter = () => {
           <AiFillGithub />
         </a>
         <div data-aos="fade-in" className="copyright">
-          | Copyright &copy; <span>2023 Siriux&apos;s Protfolio </span> All
+          | Copyright &copy; <span>2024 Siriux&apos;s Portfolio </span> All
           rights reserved |
         </div>
       </div>

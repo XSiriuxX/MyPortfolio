@@ -1,9 +1,9 @@
 import "./contact.css";
-import { BsArrowRight } from "react-icons/bs";
 import { RiSendPlaneFill } from "react-icons/ri";
 import "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
+import imagen from "../../Extras/foto.png";
 
 const Contact = () => {
   const form = useRef();
@@ -42,54 +42,54 @@ const Contact = () => {
           <span className="contact-divider" />
         </div>
 
-        <section className="left">
-          <div className="image">
-            <img data-aos="fade-up" alt="me" />
-          </div>
-        </section>
+        <div className="contact2">
+          <section className="left2">
+            <div className="image">
+              <img data-aos="fade-up" alt="me" src={imagen} />
+            </div>
+          </section>
 
-        <section className="contact-content">
-          <div className="contact-text">
+          <section data-aos="fade-up" className="contact-content">
             <h1>You Need</h1>
             <h3>Beautiful design for your website leave a request</h3>
-          </div>
 
-          <div className="contact-right">
-            <form
-              className="contact-form"
-              ref={form}
-              onSubmit={handleFormSubmit}
-            >
-              <input
-                className="input"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your name"
-                required
-              />
-              <input
-                className="input"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="email@email.com"
-                required
-              />
-              <textarea
-                className="textarea"
-                id="message"
-                name="message"
-                placeholder="Write your message"
-                required
-              />
-              <button className="submit-btn" id="button" type="submit">
-                <span>{boton}</span>
-                <RiSendPlaneFill />
-              </button>
-            </form>
-          </div>
-        </section>
+            <div className="contact-right">
+              <form
+                className="contact-form"
+                ref={form}
+                onSubmit={handleFormSubmit}
+              >
+                <input
+                  className="input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+                <input
+                  className="input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email@email.com"
+                  required
+                />
+                <textarea
+                  className="textarea"
+                  id="message"
+                  name="message"
+                  placeholder="Write your message"
+                  required
+                />
+                <button className="submit-btn" id="button" type="submit">
+                  <span>{boton}</span>
+                  <RiSendPlaneFill />
+                </button>
+              </form>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   );
