@@ -29,7 +29,7 @@ const Hero = () => {
     <div id="home" className="hero">
       <div className="hero-container">
         <section className="left" data-aos="fade-up">
-          <h2>Hello, I am Giovanni Cespedes</h2>
+          <h2 className="titulo">Hello, I am Giovanni Cespedes</h2>
 
           <TypeAnimation
             sequence={[

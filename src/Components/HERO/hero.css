@@ -18,6 +18,7 @@
 
 .left {
   width: 60%;
+  text-align: left;
 }
 
 .right {
@@ -30,7 +31,6 @@
 .left h2 {
   font-size: 36px;
   font-weight: bold;
-  text-align: center;
 }
 
 h1 {
@@ -133,7 +133,6 @@ h1 {
   .left {
     order: 2;
     width: 110%;
-
     text-align: center;
   }
 
@@ -161,7 +160,6 @@ h1 {
 
   .buttons a {
     min-width: 100px;
-
     font-size: 12px;
   }
 }
