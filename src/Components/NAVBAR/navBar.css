@@ -19,7 +19,7 @@
   height: 64px;
   width: 64px;
   color: white;
-  background: #18181be3;
+  background: rgba(0, 0, 0, 0.8);
   border: 1px solid #27272a;
   border-radius: 50%;
   display: flex;
@@ -34,7 +34,7 @@
   justify-content: space-between;
   width: 100%;
   padding: 0 66px;
-  background-color: #18181be3;
+  background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid #27272a;
   border-radius: 48px;
 }
@@ -71,14 +71,23 @@
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
+    height: 64px;
+    width: 64px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #27272a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-links-dropdown {
     text-align: center;
     flex-direction: column;
-    background-color: rgb(16, 16, 16);
-    width: 30%;
-    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 40%;
+    height: 40vh;
     position: fixed;
     top: 0;
     right: -100%;
@@ -91,11 +100,8 @@
     right: 0px;
   }
 
-  .nav-links-dropdown li {
-    margin-bottom: 30px;
-  }
-
   .nav-links-dropdown a {
-    padding-right: 0rem;
+    margin-bottom: 50px;
+    width: 80px;
   }
 }

@@ -8,7 +8,7 @@ const Fotter = () => {
   return (
     <div id="fotter" className="fotter">
       <div className="fotter-container">
-        <h2 data-aos="zoom-out"> Let&apos;s Talk</h2>
+        <h2 data-aos="fade-in"> Let&apos;s Talk</h2>
         <a
           rel="noreferrer"
           target="_blank"
@@ -34,7 +34,7 @@ const Fotter = () => {
         >
           <AiFillGithub />
         </a>
-        <div data-aos="fade-in" className="copyright">
+        <div data-aos="fade-up" className="copyright">
           | Copyright &copy; <span>2024 Siriux&apos;s Portfolio </span> All
           rights reserved |
         </div>
