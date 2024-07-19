@@ -19,3 +19,8 @@
   border-color: #fff;
   box-shadow: none;
 }
+
+@media screen and (max-width: 768px) {
+  .scroll-top {
+  }
+}

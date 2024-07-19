@@ -50,3 +50,13 @@
   justify-content: center;
   gap: 5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .flip-card {
+    width: 49%;
+  }
+
+  .flip-card h2 {
+    font-size: 140%;
+  }
+}
